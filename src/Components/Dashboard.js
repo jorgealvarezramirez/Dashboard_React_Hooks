@@ -1,6 +1,7 @@
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   return (
@@ -12,6 +13,7 @@ const Dashboard = () => {
             <Nav.Link href="#home">Inicio</Nav.Link>
             <Nav.Link href="#features">Mi Primer Componente</Nav.Link>
             <Nav.Link href="#pricing">Calculadora</Nav.Link>
+            <Link to="/">Salir</Link>
           </Nav>
         </Container>
       </Navbar>
