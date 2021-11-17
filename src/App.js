@@ -1,6 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Dashboard from "./Components/Dashboard";
+import Dashboard from "./components/Dashboard";
+import Calculadora from "./components/Calculadora";
 import { Route, Routes } from "react-router";
 import { Link } from "react-router-dom";
 
@@ -19,7 +20,9 @@ function App() {
             </div>
           }
         ></Route>
-        <Route path="/dashboard" element={<Dashboard />}></Route>
+        <Route path="/dashboard" element={<Dashboard />}>
+          <Route path="calculadora" element={<Calculadora />}></Route>
+        </Route>
       </Routes>
     </div>
   );

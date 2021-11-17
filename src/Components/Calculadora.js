@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import { useState } from "react";
 import { Resultado } from "./Resultado";
 
-export const Calculadora = () => {
+const Calculadora = () => {
   // Crear estados
   const [num1, setNum1] = useState();
   const [num2, setNum2] = useState();
@@ -64,3 +64,4 @@ export const Calculadora = () => {
     </div>
   );
 };
+export default Calculadora;
